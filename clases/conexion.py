@@ -1,8 +1,8 @@
 import pymysql
 class Conexion():
     def __init__(self):
-        host='localhost',
-        username= 'root',
+        host='',
+        username= '',
         password= '', #falta rellenar
         database= '' #falta rellenar
     
@@ -14,7 +14,7 @@ class Conexion():
         self.commit
         return self.cursor
     
-    def commit():
-    
-    def rollback():
-    
+    def commit(self):
+        self.db.commit
+    def rollback(self):
+        self.db.rollback
